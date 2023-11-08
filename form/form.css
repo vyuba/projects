@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 255, 0.501);
+}
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 255, 0.325);
+}
+
+.form-container > h1{
+    margin-top: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+input{
+    height: 30px;
+    margin: 10px;
+}
+
+/* .input-row{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+label{
+    font-weight: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 0.5rem;
+}
+
+p{
+    background-color: red;
+    color: white;
+    text-transform: none;
+    width: fit-content;
+    position: absolute;
+    top: 88px;
+    left: 90px;
+}
+
+.lastNameError{
+    background-color: red;
+    color: white;
+    text-transform: none;
+    width: fit-content;
+    position: absolute;
+    top: 159px;
+    left: 90px;
+}
+
+.emailError{
+    background-color: red;
+    color: white;
+    text-transform: none;
+    width: fit-content;
+    position: absolute;
+    top: 220px;
+    left: 60px;
+}
+
+
+.button{
+    width: 25%;
+    margin-left: 9.5rem;
+    padding: 7px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.change{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
