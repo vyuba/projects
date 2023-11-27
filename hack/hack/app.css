@@ -52,6 +52,7 @@
   
   .search-bar:hover{
     border: 1px #E1E1E1 solid;
+    transition: border 0.5s ease-in;
   }
   
   .search-bar:focus{
@@ -107,6 +108,7 @@
   
   .alert-bell:hover{
     background-color: #616161;
+    transition: background-color 0.5s ease-in;
   }
   
   .alert-bell:focus{
@@ -139,6 +141,7 @@
   
   .profile:hover{
     background-color: #616161;
+    transition: background-color 0.5s ease-in;
   }
   
   .profile:focus{
@@ -460,6 +463,7 @@
     align-items: center;
     justify-content: baseline;
     opacity: 1;
+    transition: opacity 0.5s ease-in;
   }
   
   .first-cover{
@@ -497,19 +501,20 @@
   .second{
     margin-top:28px ;
     width: 70%;
-    height: fit-content;
+    max-height: 500px;
+    /* height: fit-content; */
     background-color: #FFFFFF;
     color: #303030;
     border: 1px #DBDBDB solid;
     border-radius: 8px;
     overflow: hidden;
-    
+    transition: max-height 0.5s ease-out;
     
   }
   
   .second.visible{
-    height: 106px;
-    transition: height 0.3s ease-in-out;
+    max-height: 114px;
+    transition: max-height 0.5s ease-in;
   }
   
   .second > span{
@@ -579,6 +584,7 @@
     display: block;
     height: 100%;
     border-radius: 28px;
+    transition: width 0.5s ease-in;
     /* background-color: black; */
   }
   
@@ -791,6 +797,7 @@
 
     .dropdown > div > button:hover {
         background: #2A2A2A;
+        transition: background 0.5s ease-in;
     }
 
     .dropdown > div > button:active {
@@ -919,7 +926,7 @@
     }
     
     .second.visible{
-      /* height: px; */
+      /* height:fit-content; */
     }
   
     .first-cover > p{

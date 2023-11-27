@@ -87,6 +87,7 @@ const handleProfileEscapeKeyPress = (event) => {
 
 const handleProfileKeyPress = (event) => {
     if(event.key === 'Enter'){
+        event.preventDefault()
         profileButt.click();
     }
 }
