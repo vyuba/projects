@@ -369,7 +369,8 @@ function toggleMenu(menu) {
 
 
 allMenus.forEach(function (menuItem) {
-    menuItem.addEventListener('click', function () {
+    menuItem.addEventListener('mousedown', function () {
+        event.preventDefault();
         // toggleImg(this)
       toggleMenu(this);
         
