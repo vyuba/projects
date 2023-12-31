@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #ffff;
+    --primary-color: #3F60D3;
+    --secondary-color: #2ecc71;
+    --font-size: 40px;
+    --font-fam: Montserrat Alternates;
+}
+
+h2{
+    font-size: 20px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--font-fam);
+}
+
+p{
+    font-size: 12px;
+    font-family: var(--font-fam);
+}
+
+header{
+    width: 100%;
+    height: inherit;
+}
+
+nav{
+    width: 100%;
+    height: 89px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 32px;
+}
+
+#Menu{
+    display: none;
+}
+
+#closeIcon{
+    width: 50px;
+    height: 50px;
+    margin-left: 85%;
+    margin-top: 36px;
+    margin-bottom: 38px;
+    display: grid;
+    place-items: center;
+    &:hover{
+        background-color: #EDEDED;
+    }
+}
+
+.slideMenu{
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    top: 1px;
+    transform: translateX(0%);
+    position: absolute;
+    background-color: white;
+    transition: transform 0.3s;
+    display: block;
+}
+
+#slideMenu.hidden{
+    transform: translateX(100%);
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#slideMenu > ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#slideMenu > ul > li{
+    height: 52px;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: Montserrat Alternates;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover{
+        background-color: #EDEDED;
+    }
+}
+
+#slideMenu > ul > li > svg{
+    margin-right: 10px;
+}
+
+button{
+    width: 196px;
+    height: 45px;
+    background-color: var(--primary-color);
+    font-family: Montserrat Alternates;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    &:hover{
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+#heroImage{
+    margin-top: 53px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-fam);
+    font-size: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+#heroImage > p{
+    color: black;
+    font-size: 12px;
+    padding: 10px 15px 0 15px;
+}
+
+
+
+#memojiContainer{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: grid;
+    place-items: center;
+    align-self: center;
+    animation-name: updown;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all, 3s;
+}
+
+@keyframes updown {
+    0%{
+        transform: translateY(0px) ;
+    }
+    50%{
+        transform: translateY(-10px) ;
+    }
+    100%{
+        transform: translateY(0px)  ;
+    }
+    
+}
+
+#aboutMe{
+    margin: 70px 0 0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#aboutMe > p{
+    padding: 0 15px;
+}
+
+#skill{
+    width: 100%;
+    height: 120px;
+    margin: 0 0 92px 0;
+    text-align: center;
+    padding: 0 15px;
+    font-family: var(--font-fam);
+    font-size: 12px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#skill > li::before {
+    content: "\2013"; /* Unicode character for an en dash (–) */
+    margin-right: 0.5em; /* Adjust space between dash and list item text */
+    color: var(--primary-color);
+}
+
+#skill > li >strong {
+    color: var(--primary-color);
+}
+
+#servicesContainer{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uxdesign{
+    width: 289px;
+    height: 318px;
+    background-image: url(img/Kairo\ 1.png);
+}
+
+.frontend{
+    width: 289px;
+    height: 318px;
+    background-image: url(img/Patungans\ -\ Joint\ Budget\ Planner\ Landing\ Page\ \(1\)\ 1.png);
+}
+
+#projects{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.projects{
+    width: 80%;
+    height: 378px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--font-fam);
+}
+
+.projectsImg{
+    margin: 0 8.5px;
+    width: 95%;
+    height: 221px;
+    background-color: var(--main-color);
+}
+
+.projectsName{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 8.5px;
+}
+
+.aboutProjects{
+    text-align: left;
+    padding-left: 8.5px;
+}
+
+.iconContainer{
+    display: flex;
+    width: calc(55px + 93px + 50px);
+    height: 23px;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: var(--font-fam);
+    padding-left: 8.5px;
+}
+
+.iconContainer > div{
+    display: flex;
+    align-items: center;
+}
+
+#contactForm{
+    width: 100%;
+    height: 525px;
+    background-color: floralwhite;
+    margin-bottom: 60px;
+}
+
+#contactForm > form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contactForm > form > input{
+    width: 345px;
+    height: 54px;
+}
+
+#contactForm > form > input::placeholder{
+    font-size: 14px;
+    font-family: var(--font-fam);
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 10rem;
+}
